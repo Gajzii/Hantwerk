@@ -1,0 +1,400 @@
+/* --- theme style --- */
+html, body{
+  background-color: #E1C699;
+  font-size: 100%;
+  color: #71624E;
+  z-index: 1;
+  position: relative;
+}
+
+.theme_element_backgroundcolor{
+  background-color: #E3D3B7;
+  border-radius: 20px 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/* --- wrapper --- */
+.wrapper{
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 900px;
+}
+
+.bg-img {
+    background-image: url("../img/fustage.png");
+    min-height: 485px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 20px
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: top;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav_img1{
+    height: 400px;
+}
+
+.nav_img2{
+    height: 400px;
+    margin-top: 40px;
+}
+
+.nav_img3{
+    height: 400px;
+}
+
+.nav_img4{
+    height: 400px;
+    margin-top: 40px;
+}
+
+.hantwerk{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    color: white;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 300%;
+    line-height: 75%;
+}
+
+/* -- slideshow -- */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  background-image: url(../img/tonde.png);
+  background-size: cover;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* --- style of page header and navigation --- */
+.kampagnebillede{
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  z-index: 2;
+  position: relative;
+}
+
+.kampagne_background{
+  background-color: #e3d3b7;
+  padding: 2%;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.kampagne_heading{    
+  text-align: center;
+  font-size: 70px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  color: white;
+  line-height: 100px;
+  z-index: 2;
+  position: relative;
+}
+
+.kampagnetekst{
+  text-align: center;
+  display: block;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #71624E;
+  font-family: moret, serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  font-size: 100%;
+  z-index: 2;
+  position: relative;
+}
+
+.price_text{
+  font-size: 50px;
+  font-weight: 800;
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* -- ugens ret -- */
+.ugensret{
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  z-index: 2;
+  position: relative;
+}
+
+.menu_heading{
+  text-align: center;
+  font-size: 70px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  color: #45525f;
+  line-height: 100px;
+  z-index: 2;
+  position: relative;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.ingredienser{
+    color:#45525f;
+    text-align: center;
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 4%;
+    border-radius: 10%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px;
+    font-size: 20px;
+    z-index: 2;
+    position: relative;
+}
+
+/* -- citater -- */
+.theme_element_backgroundpicture{
+  background-image: url(../img/citatmur.png);
+  background-size: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.citat {
+    text-align: center;
+    display: block;
+    margin: 20px 20px 0px 20px !important;
+    color: white;
+    font-family: moret, serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    font-size: 100%;
+    position: relative;
+    z-index: 3;
+    font-style: italic;
+}
+
+.citat_person1{
+    text-align: right;
+    display: block;
+    margin: 0px 20px 20px 20px !important;
+    color: #fff;
+    font-family: moret, serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 100%;
+    position: relative;
+    z-index: 3;
+    
+}
+
+.citat_person2{
+    text-align: left;
+    display: block;
+    margin: 0px 20px 20px 20px !important;
+    color: white;
+    font-family: moret, serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 100%;
+    position: relative;
+    z-index: 3;
+}
+
+/* --- footer --- */
+.page_footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 15.625rem;
+  margin-top: 20px;
+}
+
+.footer_heading{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer_heading2{
+  text-align: center;
+  font-size: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  color: #45525f;
+  z-index: 2;
+  position: relative;
+}
+
+.page_footer_address{
+  font-style: italic;
+  line-height: 20px;
+}
+
+.some_images1{
+  height: 40px;
+  margin-right: 16px;
+}  
+
+ .some_images2{
+  height: 40px;
+}  
+
+.book_bord_image{
+  height: 70px;
+  position: relative;
+  align-items: 0 auto;
+}
+
+.footer_text{
+  text-align: center;
+  display: block;
+  color: #71624E;
+  font-family: moret, serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  font-size: 100%;
+  z-index: 2;
+  position: relative;
+}
+
+/* --- responsivt design --- */
+@media only screen and (max-width: 800px){
+.nav_img1{
+  height: 200px;
+}
+.nav_img2{
+  height: 200px;
+}
+.nav_img3{
+  height: 200px;
+}
+.nav_img4{
+  height: 200px;
+}  
+
+.page_footer{
+  flex-direction: column;
+  height: 35rem;
+  background-color: #E1C699; 
+  padding-top: 20px;
+}
+
+.page_footer_address{
+  text-align: center;
+}
+
+.footer_heading{
+  text-align: center;
+}
+
+.page_footer_section{
+  background-color: #E3D3B7;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.some_images1{
+  height: 50px;
+}  
+ 
+ .some_images2{
+ height: 50px
+}  
+
+.book_bord_image{
+  height: 80px;
+}
+
+.menu_heading{
+  font-size: 50px;
+}

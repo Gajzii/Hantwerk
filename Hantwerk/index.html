@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Hantwerk | Mad og fad for studerende</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+</head>
+
+<body class="theme_page">
+
+  <header>
+    <div class="bg-img">
+        <br>
+        <img class="hantwerk" src="img/hantwerk_logo.png" alt="Hantwerk Logo">
+        <h1 class="slogan">MAD & FAD</h1>
+        <div class="navbar">
+            <a href="#om"><img class="nav_img1" src="img/om.png" alt="OM"></a>
+            <a href="#øl"><img class="nav_img2" src="img/øl.png" alt="ØL"></a>
+            <a href="#mad"><img class="nav_img3" src="img/mad.png" alt="MAD"></a>
+            <a href="#book"><img class="nav_img4" src="img/book.png" alt="BOOK"></a>
+        </div>
+        <br>
+    </div>
+  </header>
+
+	<main>
+    <!-- kampagne, mad og fad -->
+    <img class="kampagnebillede" src="img/drenge.png" alt="billede af to drenge der drikker øl på Hantwerk">
+    <h1 class="kampagne_heading" id="om">MAD OG FAD</h1>
+    <section class="kampagne_background">
+      <p class="kampagnetekst">
+      Godt nyt til studerende! Vi lancerer nu et su-venligt torsdagskoncept, som byder på en aften med dagens ret og en valgfri øl - uanset om du er til Klassisk, Kælder Kold eller Fodgængeren. Prisen for denne fornøjelse er blot</p>
+      <h2 class="price_text">150 kr</h2> 
+      <p class="kampagnetekst">ved fremvisning af gyldigt studiekort, ellers vil prisen være 225 kroner. Book bord, tag dine medstuderende under armen, og nyd en skøn aften hos Hantwerk.</p>
+    </section>
+
+    <!-- Slideshow -->
+    <div class="slideshow-container" id="øl">
+      <div class="mySlides fade">
+        <img src="img/klassisk.PNG" alt="Hantwerk klassisk" style="width:100%">
+        <div class="text"></div>
+      </div>
+      <div class="mySlides fade">
+        <img src="img/havrestout.PNG" alt="Hantwerk havrestout" style="width:100%">
+        <div class="text"></div>
+      </div>
+      <div class="mySlides fade">
+        <img src="img/kellerbier.PNG" alt="Hantwerk kellerbier" style="width:100%">
+        <div class="text"></div>
+      </div>
+        <div class="mySlides fade">
+        <img src="img/berlinerweisse.PNG" alt="Hantwerk berlinerweisse" style="width:100%">
+      <div class="text"></div>
+      </div>
+      <div class="mySlides fade">
+        <img src="img/englishstrongbitter.PNG" alt="Hantwerk englishstrongbitter" style="width:100%">
+        <div class="text"></div>
+      </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div><br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span>  
+    </div>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+      showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+      showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1} 
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+        }
+        for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block"; 
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
+
+    <!-- ugens ret -->
+    <img class="ugensret" src="img/ugensmenu.png" alt="ugens menu">
+    <h1 class="menu_heading" id="mad">VIKINGEGRYDE</h1>
+    <p class="ingredienser"> 
+    LANGTIDSSTEGT SVINENAKKE<br>
+    ITALIENSK PANCETTA<br>
+    CREMET FLØDESOVS LAVET PÅ SVAMPE OG ÅRSTIDENS FRISKE GRØNTSAGER<br>
+    SERVERES M. BLOMKÅLSRIS
+    </p>
+    <section class="kampagne_background">
+      <p class="kampagnetekst"> Torsdagens menu er en god gammeldags vikingegryde med svinekød, bacon og cremet sovs. Hvis du er vegetar eller allergiker, kan vi naturligvis også imødekomme dine behov. Du skal blot angive det i kommentarfeltet, når du betiller bord, og så finder vi en løsning til dig.
+      </p>
+    </section>
+    <!-- citat sektion -->
+    <section class="theme_element_backgroundpicture">
+      <p class="citat">"Rå charme på havnen. Hantwerk, en ny øl- og vinbar direkte ud til vandet i Århus Lystbådehavn, har poteteniale til at blive det nye in-sted i Århus"</p>
+      <p class="citat_person1">- Jyllandsposten</p>
+      <p class="citat">"Det skal være ægte, det skal være afslappet, og det skal være nede på jorden"</p>
+      <p class="citat_person2">- Trine, 26 år, tjener hos Hantwerk</p>
+      <p class="citat">“Det er fedt at være et sted, hvor man får andet end bare en Tuborg Classic”</p>
+      <p class="citat_person1">- Andreas, 29 år, gæst på Hantwerk</p>
+      <p class="citat">"Et utroligt dejligt sted med god mad, dejlige øl, afslappet atmosfære til en meget rimelig pris!"</p>
+      <p class="citat_person2">- Asger, Tripadvisor</p>
+    </section>
+    <section class="book_bord">
+    <h4 class="footer_heading2" id="book">KONTAKT OS</h4>
+    </section>
+  </main>
+
+  <footer class="page_footer theme_element_backgroundcolor">
+    <section class="page_footer_section" id="footer">
+      <address class="footer_text">
+      Mandag: LUKKET<br>
+      Tirsdag: 12.00 - 22.00<br>
+      Onsdag 12.00 - 22.00<br>
+      Torsdag 12.00 - 00.00<br>
+      Fredag 12.00 - 00.00<br>
+      Lørdag 12.00 - 00.00<br>
+      Søndag: LUKKET<br>
+      </address>
+    </section>
+    <section class="book_bord">
+      <a href="https://dinnerbooking.com/dk/da-DK/book/table/pax/1260/2"><img src="img/bookbord.png" alt="Hantwerk | book bord" class="book_bord_image"></a>
+    </section>
+    <section class="page_footer_section">
+      <address class="footer_text">
+      Hantwerk <br>
+      Fiskerivej 2D<br>
+      8000 Aarhus C<br>
+      Denmark<br><br>
+      reservation@hantwerk.dk<br>
+      Tlf. 91 25 62 57<br>
+      </address>
+    </section>
+    <section class="some_section">
+      <h4 class="footer_heading"></h4>
+      <a href="https://www.facebook.com/HantwerkAarhus"><img src="img/facebooklogo.png" alt="Hantwerk | facebook logo" class="some_images1"></a>
+      <a href="https://www.instagram.com/hantwerk.dk/"><img src="img/instagramlogo.png" alt="Hantwerk | instagram logo" class="some_images2"></a>
+    </section>
+  </footer>
+
+</body>
+</html>
+
+
+
